@@ -9,6 +9,6 @@ class ProductCat extends Product
     public function __construct($title, $image, $price, $type)
     {
         // associo al costruttore del padre
-        parent::__construct($title, $image, $price, 'Icona per gatti', $type);
+        parent::__construct($title, $image, $price, 'https://img.freepik.com/vettori-gratuito/carina-icona-di-gatto-nero-isolata_24640-134010.jpg', $type);
     }
 }

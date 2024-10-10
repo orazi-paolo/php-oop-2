@@ -8,6 +8,6 @@ class ProductDog extends Product
     public function __construct($title, $image, $price, $type)
     {
         // associo al costruttore del padre
-        parent::__construct($title, $image, $price, 'Icona per i cani', $type);
+        parent::__construct($title, $image, $price, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSfGK0dhTNfddcWTZKPqOQHPBeSvh-MNjouQ&s', $type);
     }
 }
