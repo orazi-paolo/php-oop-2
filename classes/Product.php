@@ -4,14 +4,14 @@
 class Product
 {
     // creo le variabili d'istanza generali per ogni prodotto
-    public $title;
-    public $image;
-    public $price;
-    public $icon;
-    public $type;
+    public string $title;
+    public string $image;
+    public float $price;
+    public string $icon;
+    public string $type;
 
     // creo un costruttore per la classe
-    public function __construct($title, $image, $price, $icon, $type)
+    public function __construct(string $title, string $image, float $price, string $icon, string $type)
     {
         $this->title = $title;
         $this->image = $image;

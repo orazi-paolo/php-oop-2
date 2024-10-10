@@ -6,7 +6,7 @@ require_once __DIR__ . '/Product.php';
 class ProductCat extends Product
 {
 
-    public function __construct($title, $image, $price, $type)
+    public function __construct(string $title, string $image, float $price, string $type)
     {
         // associo al costruttore del padre
         parent::__construct($title, $image, $price, 'https://img.freepik.com/vettori-gratuito/carina-icona-di-gatto-nero-isolata_24640-134010.jpg', $type);
