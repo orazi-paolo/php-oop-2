@@ -36,7 +36,7 @@ require __DIR__ . '/db/db.php';
                         <div class="card-body">
                             <img src="<?php echo $product->icon ?>" alt="<?php echo $product->title ?>">
                             <h5 class="card-title"> <?php echo $product->title ?> </h5>
-                            <p class="card-text">Prezzo: <?php echo $product->price ?></p>
+                            <p class="card-text">Prezzo: <?php echo $product->price ?> $</p>
                             <p class="card-text">Tipologia: <?php echo $product->type ?></p>
                         </div>
                     </div>
