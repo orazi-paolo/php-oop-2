@@ -1,5 +1,4 @@
 <?php
-// Stampiamo delle card contenenti i dettagli dei prodotti, come immagine, titolo, prezzo, icona della categoria ed il tipo di articolo che si sta visualizzando (prodotto, cibo, gioco, cuccia)
 
 // includo il database
 require __DIR__ . '/db/db.php';
@@ -36,6 +35,7 @@ require __DIR__ . '/db/db.php';
                         <div class="card-body">
                             <img src="<?php echo $product->icon ?>" alt="<?php echo $product->title ?>">
                             <h5 class="card-title"> <?php echo $product->title ?> </h5>
+                            <p> <?php echo $product->getDescription() ?></p>
                             <p class="card-text">Prezzo: <?php echo $product->price ?> $</p>
                             <p class="card-text">Tipologia: <?php echo $product->type ?></p>
                         </div>

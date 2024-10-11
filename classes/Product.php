@@ -1,8 +1,11 @@
 <?php
 // Creo una classe madre
+// includo il trait che ho utilizzato nel padre per poterlo utilizzare poi anche su tutti i figli
+require_once __DIR__ . "/../trait/Description.php";
 
 class Product
 {
+    use Description;
     // creo le variabili d'istanza generali per ogni prodotto
     public string $title;
     public string $image;
