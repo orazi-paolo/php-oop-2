@@ -34,9 +34,16 @@ require __DIR__ . '/db/db.php';
                         <img src="<?php echo $product->image ?>" alt=" <?php echo $product->title ?>">
                         <div class="card-body">
                             <img src="<?php echo $product->icon ?>" alt="<?php echo $product->title ?>">
-                            <h5 class="card-title"> <?php echo $product->title ?> </h5>
-                            <p> <?php echo $product->getDescription() ?></p>
-                            <p class="card-text">Prezzo: <?php echo $product->price ?> $</p>
+                            <h5 class="card-title"><?php echo $product->title ?></h5>
+                            <p><?php echo $product->getDescription() ?></p>
+                            <?php
+                                // controllo se il prezzo è minore di 0
+                                if ($product->price < 0) {
+                                    echo "<p class='card-text'>Non puoi inserire un prezzo minore di 0!!!</p>";
+                                } else {
+                                    echo "<p class='card-text'>Prezzo: {$product->price} $</p>";
+                                }
+                                ?>
                             <p class="card-text">Tipologia: <?php echo $product->type ?></p>
                         </div>
                     </div>
@@ -45,6 +52,7 @@ require __DIR__ . '/db/db.php';
             </div>
         </div>
     </main>
+
 
 </body>
 
